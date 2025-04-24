@@ -5,6 +5,10 @@ from .db import get_db_connection
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Backend is working!"}
+                   
 @app.route("/todos", methods=["GET"])
 def get_todos():
     conn = get_db_connection()
