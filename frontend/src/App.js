@@ -6,7 +6,7 @@ import {
   addTodo,
   toggleTodo,
   deleteTodo,
-} from "../api";
+} from "./api";
 
 function App() {
   const [todos, setTodos] = useState([]);
